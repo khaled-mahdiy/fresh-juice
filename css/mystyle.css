@@ -1,0 +1,285 @@
+a{
+    font-size: 12px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    color: #fff;
+}
+.home-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home{
+
+        background: url(../images/home21.jpg)no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height:100vh;
+        position:relative;
+}
+.service{
+    background-color: #f7f5f2;
+}
+.service .midell img{
+    width: 100%;
+    vertical-align: middle;
+}
+.content-dsc{
+    font-size: 14px;
+}
+.fa-star,.shop-price{
+    font-size: 12px;
+}
+.card{
+    position: relative;
+}
+.card-btn{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #00bdbb;
+    font-size: 12px;
+    width:160px ;
+    line-height: 40px;
+    padding: 0 25px;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.3s ease-in;
+    }
+.card:hover img{
+    opacity: 0.7;
+}
+.card:hover .card-btn{
+    visibility: visible;
+}
+.card-btn:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+.numbers{
+    background: url(../images/tea-home-parallax.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blog{
+    background: url(../images/tea-home-new-gray-2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center -100px;
+    min-height: 500px;
+}
+.blog-dsc{
+    font-size: 14px;
+}
+.blog-btn{
+    width: 140px;
+    background-color: #00bdbb;
+    font-size: 12px;
+}
+.blog-btn:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+.tea-dsc{
+    font-size: 12px;
+}
+.tea-dsc{
+    font-size: 14px;
+}
+.right-tea{
+    position: relative;
+}
+.right-tea img{
+ width: 100%;
+ display: block;
+ position: absolute;
+ top: -150px;
+ left: 0;
+}
+.builder{
+    background: url(../images/tea-home-new-gray-coffee-1.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: black !important;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+.right-side{
+    animation-name:toleft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:absolute;
+    right:0;
+}
+.right-side .img-1{
+    position:absolute;
+    top:150px;
+    right: 50px;
+}
+.right-side .img-2{
+    position:absolute;
+    top:100px;
+    right: 200px;
+}
+.right-side .img-3{
+    position:absolute;
+    top:150px;
+    right: 100px;
+}
+.right-side .img-4{
+    position:absolute;
+    top:90px;
+    right: 50px;
+}
+
+
+
+@keyframes toleft {
+    0%{
+        right:-250px;
+    }
+    100%{
+        right:70px;
+    }
+}
+
+
+.left-side{
+    animation-name:toright;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:absolute;
+    left:0;
+}
+@keyframes toright {
+    0%{
+        left:-250px;
+    }
+    100%{
+        left:50px;
+    }
+}
+.left-side .img-1{
+    position:absolute;
+    top:100px;
+    left: 50px;
+    width: 150px;
+}
+.left-side .img-2{
+    position:absolute;
+    top:50px;
+    left: 200px;
+}
+.left-side .img-3{
+    position:absolute;
+    top:150px;
+    left: 150px;
+}
+
+.left-bottom{
+    animation-name:left-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+@keyframes left-bottom {
+    0%{
+        left:-250px;
+    }
+    100%{
+        left:50px;
+    }
+}
+
+.top-bottom{
+    animation-name:top-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:absolute;
+    left: 550px;;
+    top:0;
+}
+@keyframes top-bottom {
+    0%{
+        top:-250px;
+    }
+    100%{
+        top:50px;
+    }
+}
+.top-bottom .img-1{
+    position:absolute;
+    top:10px;
+    left:-20px;
+}
+.top-bottom .img-2{
+    position:absolute;
+    top:20px;
+    left:-100px;
+}
+.top-bottom .img-3{
+    position:absolute;
+    top:20px;
+    left:50px;
+}
+
+.images .img{
+    animation-name:top-bottom;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: alternate;
+    position:absolute;
+    left:0;;
+    top:0;
+}
+
+@keyframes top-bottom {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.images .imgs{
+    animation-name:rights-bottom;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:absolute;
+    right:0;;
+    bottom:50px;
+}
+
+
+
+
+
+@keyframes rights-bottom {
+    0%{
+        right: 0;
+    }
+    100%{
+        right:150px;
+    }
+}
